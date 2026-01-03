@@ -3,13 +3,12 @@
 A dynamic 3D platformer developed in Unity, featuring procedural level generation, data-driven campaign management, and polished gameplay mechanics.
 
 ## 📺 Project Overview & Technical Deep Dive
-<p align="center">
+<div align="center">
   <a href="https://www.youtube.com/watch?v=q6mIQ43P4q0">
-    <img src="https://img.youtube.com/vi/q6mIQ43P4q0/maxresdefault.jpg" alt="Korro AI Platformer Overview" width="600">
+    <img src="https://img.youtube.com/vi/q6mIQ43P4q0/hqdefault.jpg" alt="Korro AI Platformer Overview" width="600" style="max-width: 100%;">
   </a>
-  <br>
-  <b>Click above for a full technical explanation and gameplay demo</b>
-</p>
+  <p><b>Click above for a full technical explanation and gameplay demo</b></p>
+</div>
 
 > **Note:** This presentation was generated using **NotebookLM**, providing an automated architectural analysis of the project's codebase and game mechanics.
 ## 🎮 About the Game
