@@ -29,6 +29,6 @@ The game includes a visual tutorial in the main menu:
 
 ## 🚀 Getting Started
 1. Ensure **Git LFS** is installed on your machine before cloning the repository.
-2. Open the project in Unity (2022.3+ recommended).
+2. Open the project in Unity (6000.0.58f2 recommended).
 3. Verify that both `MainMenu` and `Game` scenes are included in the **Build Settings**.
 4. Launch the `MainMenu` scene to begin.
