@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d067ad2d27a6d4aa4497e5380339ca, type: 3}
+  m_Name: SFX_Coin
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 408dd95e38be8834ba58c1bbcd84727d, type: 3}
+  - {fileID: 8300000, guid: cb75108f6a48f1841aeb63950efdf14e, type: 3}
+  - {fileID: 8300000, guid: df0db6b3d0dd7874daed871777eaab87, type: 3}
+  volume: 1
+  minPitch: 0.9
+  maxPitch: 1.1
+  spatialBlend: 0
+  minDistance: 1
+  maxDistance: 20

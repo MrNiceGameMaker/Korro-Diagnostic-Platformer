@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c14f9b6d508a26e43adc4f2aa29943ff, type: 3}
+  m_Name: Regular Campaign
+  m_EditorClassIdentifier: 
+  campaignLevels:
+  - {fileID: 4900000, guid: 96e48df818a30e747b24e8fb80bb6883, type: 3}
+  - {fileID: 4900000, guid: 822875dc81900ad41b17e94400bcbc5c, type: 3}
+  - {fileID: 4900000, guid: 65cb16d3f6eaab847b2c25363f03f7d1, type: 3}
+  - {fileID: 4900000, guid: 6155385606aa06a4094c088f4249c3c4, type: 3}
+  - {fileID: 4900000, guid: 6e35023cb714414489572d6c68260557, type: 3}
+  - {fileID: 4900000, guid: 50fcd501e0112e54d977e20eca463f26, type: 3}
+  - {fileID: 4900000, guid: ef75493708068d24580e0cff3b11de8d, type: 3}

@@ -1,0 +1,80 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using KorroAI.Architecture;
+
+namespace KorroAI.Managers
+{
+    public class LevelFlowManager : MonoBehaviour
+    {
+        [Header("Events")]
+        [SerializeField] private VoidEventChannelSO levelCompletedChannel;
+        [SerializeField] private IntEventChannelSO healthChangedChannel;
+        [SerializeField] private IntEventChannelSO scoreChangedChannel;
+        
+        [Header("Campaign Data")]
+        [SerializeField] private CampaignDataSO campaignData;
+
+        private int currentHealth;
+        private int currentScore;
+
+        private void OnEnable()
+        {
+            if (levelCompletedChannel != null) levelCompletedChannel.OnEventRaised += OnLevelComplete;
+            if (healthChangedChannel != null) healthChangedChannel.OnEventRaised += (val) => currentHealth = val;
+            if (scoreChangedChannel != null) scoreChangedChannel.OnEventRaised += (val) => currentScore = val;
+        }
+
+        private void OnDisable()
+        {
+            if (levelCompletedChannel != null) levelCompletedChannel.OnEventRaised -= OnLevelComplete;
+        }
+
+        private void OnLevelComplete()
+        {
+            if (GameSession.IsCampaignMode)
+            {
+                GameSession.SavedHealth = currentHealth;
+                GameSession.SavedScore = currentScore;
+
+                int nextIndex = GameSession.CurrentLevelIndex + 1;
+                if (campaignData != null && nextIndex >= campaignData.LevelCount)
+                {
+                    Debug.Log("🏁 Last Level Reached!");
+                }
+            }
+        }
+
+        // פונקציה לכפתור Next Level
+        public void LoadNextLevel()
+        {
+            Time.timeScale = 1f;
+
+            if (GameSession.IsCampaignMode)
+            {
+                int nextIndex = GameSession.CurrentLevelIndex + 1;
+
+                if (campaignData != null && nextIndex < campaignData.LevelCount)
+                {
+                    GameSession.CurrentLevelIndex = nextIndex;
+
+                    // עדכון אנליטיקס
+                    if (KorroAI.Analytics.AnalyticsManager.Instance != null)
+                    {
+                        KorroAI.Analytics.AnalyticsManager.Instance.StartNewLevel(nextIndex);
+                    }
+
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+                else
+                {
+                    SceneManager.LoadScene("MainMenu");
+                }
+            }
+            else
+            {
+                // מצב אקראי - פשוט טוענים מחדש
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
+    }
+}

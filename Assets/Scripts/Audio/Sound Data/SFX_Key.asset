@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d067ad2d27a6d4aa4497e5380339ca, type: 3}
+  m_Name: SFX_Key
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: d36031d0279bdc741af11c10cb52bdc9, type: 3}
+  - {fileID: 8300000, guid: 2645656fcfba2d74486db7c5d3229a05, type: 3}
+  - {fileID: 8300000, guid: 29eae1c44e58e744bace72d780d39db5, type: 3}
+  - {fileID: 8300000, guid: cc66c72e129ca1544b1abec88e661b0b, type: 3}
+  - {fileID: 8300000, guid: 75ce1080a6d74e74096d3a835f45242d, type: 3}
+  volume: 1
+  minPitch: 0.9
+  maxPitch: 1.1
+  spatialBlend: 0
+  minDistance: 1
+  maxDistance: 20

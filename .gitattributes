@@ -1,0 +1,2 @@
+*.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/3D[[:space:]]Models/Player/PlayerModel.fbx filter=lfs diff=lfs merge=lfs -text

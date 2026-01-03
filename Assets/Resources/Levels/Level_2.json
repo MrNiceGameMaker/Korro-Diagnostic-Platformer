@@ -1,0 +1,141 @@
+{
+    "levelId": 2,
+    "platforms": [
+        {
+            "typeIndex": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 4.0,
+                "y": 0.30000001192092898,
+                "z": 4.0
+            },
+            "hasCoin": false,
+            "hasTrap": false,
+            "hasKey": false,
+            "hasDoor": false
+        },
+        {
+            "typeIndex": 2,
+            "position": {
+                "x": 1.2167878150939942,
+                "y": 0.0,
+                "z": 1.8321640491485596
+            },
+            "scale": {
+                "x": 3.0841002464294435,
+                "y": 0.30000001192092898,
+                "z": 1.0
+            },
+            "hasCoin": false,
+            "hasTrap": false,
+            "hasKey": false,
+            "hasDoor": false
+        },
+        {
+            "typeIndex": 0,
+            "position": {
+                "x": 1.8000140190124512,
+                "y": -1.0,
+                "z": 4.223092079162598
+            },
+            "scale": {
+                "x": 2.2940516471862795,
+                "y": 0.30000001192092898,
+                "z": 1.0
+            },
+            "hasCoin": true,
+            "hasTrap": false,
+            "hasKey": false,
+            "hasDoor": false
+        },
+        {
+            "typeIndex": 0,
+            "position": {
+                "x": -1.7449636459350587,
+                "y": -2.0,
+                "z": 6.574040412902832
+            },
+            "scale": {
+                "x": 2.2227110862731935,
+                "y": 0.30000001192092898,
+                "z": 1.0
+            },
+            "hasCoin": true,
+            "hasTrap": false,
+            "hasKey": false,
+            "hasDoor": false
+        },
+        {
+            "typeIndex": 5,
+            "position": {
+                "x": -1.6287803649902344,
+                "y": -1.0,
+                "z": 7.585111618041992
+            },
+            "scale": {
+                "x": 2.495753765106201,
+                "y": 0.30000001192092898,
+                "z": 1.0
+            },
+            "hasCoin": false,
+            "hasTrap": false,
+            "hasKey": false,
+            "hasDoor": false
+        },
+        {
+            "typeIndex": 5,
+            "position": {
+                "x": -1.0236725807189942,
+                "y": 0.0,
+                "z": 10.385017395019532
+            },
+            "scale": {
+                "x": 3.8034543991088869,
+                "y": 0.30000001192092898,
+                "z": 1.0
+            },
+            "hasCoin": false,
+            "hasTrap": false,
+            "hasKey": true,
+            "hasDoor": false
+        },
+        {
+            "typeIndex": 5,
+            "position": {
+                "x": -0.958120584487915,
+                "y": 0.0,
+                "z": 11.815603256225586
+            },
+            "scale": {
+                "x": 3.348266839981079,
+                "y": 0.30000001192092898,
+                "z": 1.0
+            },
+            "hasCoin": false,
+            "hasTrap": false,
+            "hasKey": false,
+            "hasDoor": false
+        },
+        {
+            "typeIndex": 0,
+            "position": {
+                "x": -0.340350866317749,
+                "y": 0.0,
+                "z": 13.943321228027344
+            },
+            "scale": {
+                "x": 4.0,
+                "y": 0.30000001192092898,
+                "z": 4.0
+            },
+            "hasCoin": false,
+            "hasTrap": false,
+            "hasKey": false,
+            "hasDoor": true
+        }
+    ]
+}
